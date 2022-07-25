@@ -1,0 +1,1 @@
+export const cartIcon = require("../Assests/shopping-cart.png")

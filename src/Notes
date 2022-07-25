@@ -1,0 +1,34 @@
+redux
+- Redux is a primitive way for state management in Javascript Applications
+- It is not bounded to react only
+
+
+Keywords in redux
+- action: A JS object which tells action type and other info about action.
+- actionCreator - A JS function which return an action object
+- Reducer- They define the functionality of a particular action type.
+- store - contains the state of an application
+- dispatch - It is used to dispatch an action
+- subscribe - They are store subscribers and get notified when the state of store changes.
+
+
+
+react-redux
+- react-redux helps in binding react components and redux
+- The library offers a set of react hooks - useSelector(), and useStore() to get the data from the store, and useDispatch() to dispatch actions. You can also use the connect() function to create HoCs (higher order components), that listen to the store's state changes, prepare the props for the wrapped component, and re-render the wrapped components when the state changes.
+
+
+redux-thunk or redux-saga
+redux-thunk - middleware that allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. Used mainly for async calls to api, that dispatch another action on success / failure.
+
+
+action creators --
+action creators return plain javascript objects, and to make an asynchronous request inside action creators we have to use middlewares(thunk/saga)
+
+Types of action creators
+- Synchronous: Immediately return an action object with type and payload.
+- Asynchronous: Takes some amount of time to return action object with type and payload
+
+
+redux-toolkit
+It is a new way to write redux code and configure store.
