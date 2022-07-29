@@ -10,16 +10,11 @@ const Header = () => {
   const navigate = useNavigate()
   
 
-  // handling click 
+  // handling click
   const handleClick = () => {
     return navigate('/cart')
   }
   
-
-  // adding comment for git practise
-  // more bla bla bla
-
-  // Bla bla bla
   const [count, setCount] = useState(0); 
   const cart = useSelector(state => state.cart.cart)
   
