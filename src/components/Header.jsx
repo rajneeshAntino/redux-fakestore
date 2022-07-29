@@ -9,6 +9,8 @@ const Header = () => {
 
   const navigate = useNavigate()
   
+
+  // handling click
   const handleClick = () => {
     return navigate('/cart')
   }
